@@ -1,0 +1,1 @@
+["Collection(Database(Connection('localhost', 27017), u'local'), u'oplog.rs')", 5893728791301193729]

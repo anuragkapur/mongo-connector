@@ -1,0 +1,19 @@
+{
+	"_id":"123",
+	"className" : "com.ft.cddomain.content.StoryImpl",
+	"indexHeadline" : "Will this cause the crash - N",
+	"contentPackageHeadline" : "Will this cause the crash",
+	"shortLeadBody" : "This is a test to see if there will be a crash",
+	"leadBody" : "This is a test to see if there will be a crash",
+	"newspaperHeadline" : "",
+	"isFullyPublished" : true,
+	"headline" : "Crash Story",
+	"headlineUrl" : "",
+	"webSubheading" : "Are we expecting this to crash",
+	"webStandFirst" : "Will it crash",
+	"byline" : "By BD",
+	"body" : "<p>Crash Crash Crash Crash Crash Crash Crash</p>",
+	"uid" : "0750b200-f82e-11e1-9186-002128161462",
+	"markedDeleted" : false,
+	"sourceCode" : "FT"
+}	

@@ -4,3 +4,9 @@
 /test/data
 /test/logs
 /dist
+
+build/
+
+#IntelliJ files
+.idea/
+*.iml

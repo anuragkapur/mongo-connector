@@ -29,6 +29,7 @@ import logging
 from pysolr import Solr
 from threading import Timer
 from util import verify_url, retry_until_ok
+from pprint import pprint
 
 
 class DocManager():
@@ -63,7 +64,18 @@ class DocManager():
         the backend engine and add the document in there. The input will
         always be one mongo document, represented as a Python dictionary.
         """
-        self.solr.add([doc], commit=False)
+
+        #print(doc['className'])
+        if doc['className'] == 'com.ft.cddomain.content.StoryImpl':
+            print(doc['uid'])
+            try:
+                self.solr.add([doc], commit=False)
+            except AttributeError:
+                print "AttributeError in doc with uid " + doc['uid']
+        #else:
+            #pprint(doc['className'] + 'is NOT story, Will ignore')            
+
+        """self.solr.add([doc], commit=False)"""
 
     def remove(self, doc):
         """Removes documents from Solr

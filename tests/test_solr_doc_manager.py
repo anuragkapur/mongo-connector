@@ -37,8 +37,8 @@ if mongo_folder not in sys.path:
 from doc_managers.solr_doc_manager import DocManager
 from pysolr import Solr
 
-SolrDoc = DocManager("http://localhost:8983/solr/")
-solr = Solr("http://localhost:8983/solr/")
+SolrDoc = DocManager("http://localhost:8080/solr/")
+solr = Solr("http://localhost:8080/solr/")
 
 
 class SolrDocManagerTester(unittest.TestCase):
